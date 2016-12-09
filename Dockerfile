@@ -40,7 +40,7 @@ RUN cd /build/root \
     && mv /build/conf/statsite.ini etc/statsite/statsite.ini \
     && mv /build/conf/statsite.service etc/systemd/system/statsite.service \
     && mv usr/local/bin/statsite usr/bin/statsite \
-    && rm -rf usr/local
+    && rm -rf usr/local/bin
 
 # Build deb
 RUN fpm -s dir -t deb \

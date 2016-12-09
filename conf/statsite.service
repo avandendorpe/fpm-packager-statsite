@@ -5,7 +5,7 @@ Description=statsite
 Type=simple
 User=statsite
 Group=statsite
-ExecStart=/opt/statsite/statsite -f /etc/statsite/statsite.ini
+ExecStart=/usr/bin/statsite -f /etc/statsite/statsite.ini
 Restart=always
 WorkingDirectory=/tmp/
 
