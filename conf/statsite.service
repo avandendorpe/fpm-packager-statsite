@@ -1,0 +1,13 @@
+[Unit]
+Description=statsite
+
+[Service]
+Type=simple
+User=statsite
+Group=statsite
+ExecStart=/opt/statsite/statsite -f /etc/statsite/statsite.ini
+Restart=always
+WorkingDirectory=/tmp/
+
+[Install]
+WantedBy=multi-user.target

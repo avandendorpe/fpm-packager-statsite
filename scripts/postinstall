@@ -1,0 +1,5 @@
+#!/bin/sh
+set -e
+
+/bin/systemctl daemon-reload || echo "WARNING: systemd not running."
+/bin/systemctl enable statsite || echo "WARNING: systemd not running."
